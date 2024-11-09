@@ -10,6 +10,8 @@ summary(model)
 
 residuals <- model$residuals
 
+r_squared <- summary(model)$r.squared 
+cat("R-squared:", r_squared, "\n")
 
 hist(residuals, breaks=30, main="Histogram of Residuals", xlab="Residuals", col="lightblue", border="black")
 
